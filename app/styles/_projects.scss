@@ -1,0 +1,45 @@
+$backgroundBody: rgba(232, 216, 98, 0.982);
+$charcoal: rgb(79, 82, 85);
+$font-main: 'Lato', sans-serif;
+$col-3: 33%;
+$col-6: 66%;
+$col-12: 99%;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-main;
+
+  .project-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    max-width: 30%;
+    height: auto;
+    max-height: 30%;
+    margin: 10px;
+
+    img {
+      flex: 1;
+      width: auto;
+      max-width: 50%;
+      height: auto;
+      max-height: 50%;
+    }
+    }
+
+}
+
+
+
+h1 {
+  color:$charcoal;
+  font-family: $font-main;
+  align-self: center;
+}
+
+

@@ -1,0 +1,74 @@
+* {
+  padding:auto;
+  margin:auto;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $MarcellusSC;
+  font-weight: 400;
+}
+
+/*-----------------beach background-------------  */
+.img-beach {
+  height: 1000px;
+  width:  100%;
+  background-image: linear-gradient(to bottom right, rgba( 22, 54,127,.8), rgba(168,162,126,.7) ) ,url("/public/images/beach.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+
+/*-------------------NAVBAR -----------------*/
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(6, 16.66%);
+  grid-template-rows: 20px;
+  position: relative;
+  margin: 2% auto;
+  color: $orange-1;
+  z-index: 5;
+  span {
+    margin: 0 20px;
+    font-size: 30px;
+    grid-row: 1 / span 1;
+    &.H {
+     grid-column: 2 / span 1
+    }
+    &.P {
+      grid-column: 3 / span 1;
+    }
+    &.R {
+      grid-column: 4 / span 1;
+    }
+    &.C {
+      grid-column: 5 / span 1
+    }
+  }
+}
+
+/*-----------------Intro-----------------*/
+
+.intro-container {
+  display: grid;
+  grid-template-columns: 16.66% auto 16.66%;
+  grid-template-rows: 320px 100px 100px 300px auto;
+  z-index: 1;
+  font-size: 40px;
+  position: relative;
+  h1 {
+    grid-column: 2/ span 1;
+    grid-row: 2 /span 1;
+    font-family: $Julius;
+    color: $orange-3;
+  }
+  h3 {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    font-family: $Julius;
+    color: $orange-4
+  }
+}
