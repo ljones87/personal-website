@@ -7,10 +7,24 @@
 body {
   font-family: $MarcellusSC;
   font-weight: 400;
+  height: 100%;
 }
 
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.overlay-content {
+  height: 100%;
+  overflow: scroll;
+}
 /*-----------------beach background-------------  */
 .img-beach {
+  background-attachment: fixed;
   height: 1000px;
   width:  100%;
   background-image: linear-gradient(to bottom right, rgba( 22, 54,127,.8), rgba(168,162,126,.7) ) ,url("/public/images/beach.jpg");
@@ -72,3 +86,7 @@ body {
     color: $orange-4
   }
 }
+
+/*-----------projects-container-------*/
+
+
