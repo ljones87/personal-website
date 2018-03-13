@@ -3,53 +3,76 @@ $charcoal: rgb(79, 82, 85);
 $font-main: 'Lato', sans-serif;
 
 
-* {
-  margin: 0;
-  padding: 0;
-}
+.projects {
+  height: 950px;
+  width: 100%;
+  padding-top: 100px;
+  margin-top: 5px;
+  background-size: 100%;
+  background-image: linear-gradient(to bottom right, rgba( 22, 54,127,.8), rgba(168,162,126,.7));
+  background-repeat: no-repeat;
 
-.projects-container {
-  z-index: 2;
-  display: grid;
-  grid-template-columns: repeat(6, 16%);
-  grid-template-rows: repeat(6, 16% );
-  grid-column-gap: 1%;
+  .projects-container {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 10% 26% 26% 26% 10%;
+    grid-template-rows: 50px 300px 100px 300px 50px;
+    grid-column-gap: 1%;
+    text-align: center;
+    .project-box-a {
+      z-index: 1;
+      grid-area: 1 / 2 / span 2 / 2;
+      background-size: 48%;
+      background-position-x: 80px;
+      background-position-y: 80px;
+      height: 100%;
+      width: 100%;
+      background-image: url('/public/images/EC/HomeScreen.png');
+      background-repeat: no-repeat;
 
-  .project-box {
-    z-index: 1;
+      }
 
-    &.a {
-      grid-column: 2 / span 1;
-      grid-row: 2/ span 1;
-      .img {
-        height: 150px;
-        width: 150px;
+      .project-box-b {
+        grid-column: 3 / span 1;
+        grid-row: 1/ span 2;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position-y: 80px;
+        background-image: url('/public/images/dataVis.png');
         background-size: 100%;
-        background-image: url('/public/images/EC/HomeScreen.png')
+      }
+      .project-box-c {
+        grid-column: 4 / span 1;
+        grid-row: 1/ span 2;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position-y: 100px;
+        background-size: 100%;
+        background-image: url('/public/images/techTalk.png');
+      }
+      .project-box-d {
+        grid-column: 2 / span 1;
+        grid-row: 4/ span 1;
+        height: 100%;
+        width: 100%;
+        background-size: 100%;
+        background-position-y: 100px;
+        background-repeat: no-repeat;
+        background-image: url('/public/images/erasers.png');
+      }
+      .project-box-e {
+        grid-column: 3 / span 1;
+        grid-row: 4/ span 1;
+        height: 100%;
+        width: 100%;
+        background-size: 100%;
+        background-position-y: 100px;
+        background-repeat: no-repeat;
+        background-image: url('/public/images/rebric.png');
       }
     }
-
-    &.b {
-      grid-column: 3 / span 1;
-      grid-row: 2/ span 1;
-    }
-    &.c {
-      grid-column: 4 / span 1;
-      grid-row: 2/ span 1;
-    }
-    &.d {
-      grid-column: 5 / span 1;
-      grid-row: 2/ span 1;
-    }
   }
-}
-
-
-
-h1 {
-  color:$charcoal;
-  font-family: $font-main;
-  align-self: center;
-}
 
 

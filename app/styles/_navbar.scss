@@ -1,0 +1,31 @@
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(7, 14.28%);
+  grid-template-rows: 20px;
+  position: relative;
+  padding: 3% ;
+  color: $orange-1;
+  background-color: rgba( 22, 54,127,.4);
+  height: 100px;
+  z-index: 5;
+  span {
+    margin: 0 20px;
+    font-size: 30px;
+    grid-row: 1 / span 1;
+    &.H {
+     grid-column: 2 / span 1
+    }
+    &.P {
+      grid-column: 3 / span 1;
+    }
+    &.T {
+      grid-column: 4 / span 1;
+    }
+    &.R {
+      grid-column: 5 / span 1;
+    }
+    &.C {
+      grid-column: 6 / span 1
+    }
+  }
+}

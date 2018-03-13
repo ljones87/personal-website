@@ -2,7 +2,7 @@
 const projects = [
   {
    id: 'a',
-   name: 'Exquisite Corpse | Co-developer | Software Engineer',
+   name: 'Exquisite Corpse Mobile App | Co-developer | Software Engineer',
    link: 'https://exquisitecorpse-fsa.herokuapp.com/',
    video: './images/EC/userFlow1.mp4',
    img: 'public/images/EC/HomeScreen.png'
@@ -24,6 +24,12 @@ const projects = [
    name: 'ErasersErasersErasers! E-commerce | Co-developer | Software Engineer',
    link: 'https://salty-thicket-34013.herokuapp.com/home',
    img: 'public/images/erasers.png'
+ },
+ {
+   id: 'e',
+   name: 'Rebric.io | Sole Front-end Developer | Software Engineer',
+   link: 'http://rebric.io',
+   img: 'public/images/rebric.png'
  }
 ];
 
