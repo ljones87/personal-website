@@ -5,8 +5,10 @@ const Intro = () => {
     <div className="intro">
     <p className="img-beach" />
     <div className="intro-container">
-      <h1>Lina Jones</h1>
-      <h3>Full Stack Web Developer</h3>
+      <h1>Hello!</h1>
+      <h3>and welcome to my home (page)</h3>
+      <h4>My name is Lina and I'm a fullstack web developer
+      currently working in frontend engineering</h4>
     </div>
     </div>
   );
