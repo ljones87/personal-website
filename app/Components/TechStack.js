@@ -2,21 +2,22 @@ import React from "react";
 
 const TechStack = () => {
   return (
-    <div className="tech">
-      <div className="tech-container">
-        <i className="devicon-github-plain colored" />
-        <i className="devicon-babel-plain colored" />
-        <i className="devicon-d3js-plain colored" />
+    <div>
+      <div className="tech">
+      <h1 className="tech-header">The more you know!</h1>
+        <i className="devicon-javascript-plain colored dev-1" />
+        <i className="devicon-react-original colored dev-2" />
+        <i className="devicon-nodejs-plain-wordmark colored dev-3" />
+        <i className="devicon-github-plain colored dev-4" />
+        <i className="devicon-html5-plain colored dev-5" />
+        <i className="devicon-sass-original colored dev-6" />
+        <i className="devicon-mocha-plain colored dev-7" />
+        <i className="devicon-postgresql-plain colored dev-8" />
+        <i className="devicon-sequelize-plain colored dev-9" />
+        <i className="devicon-babel-plain colored dev-10" />
+        <i className="devicon-webpack-plain colored dev-11" />
+        <i className="devicon-d3js-plain colored dev-12" />
         {/*<i className="devicon-docker-plain colored" />*/}
-        <i className="devicon-javascript-plain colored" />
-        <i className="devicon-mocha-plain colored" />
-        <i className="devicon-nodejs-plain-wordmark colored" />
-        <i className="devicon-postgresql-plain colored" />
-        <i className="devicon-react-original colored" />
-        <i className="devicon-sass-original colored" />
-        <i className="devicon-sequelize-plain colored" />
-        <i className="devicon-webpack-plain colored" />
-        <i className="devicon-html5-plain colored" />
       </div>
     </div>
   );
