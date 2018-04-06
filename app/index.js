@@ -1,12 +1,12 @@
 import "./styles/index.scss";
 import React from "react";
 import ReactDOM from "react-dom";
-import Main from "./Components/Main";
+import Routing from "./Components/Routing";
 
 const App = () => {
   return (
     <div className="overlay">
-      <Main />
+      <Routing />
     </div>
   );
 };

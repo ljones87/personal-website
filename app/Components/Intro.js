@@ -3,6 +3,7 @@ import React from "react";
 const Intro = () => {
   return (
     <div className="intro">
+    <a name="home" />
     <p className="img-beach" />
     <div className="intro-container">
       <h1>Hello!</h1>

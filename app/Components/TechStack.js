@@ -3,6 +3,7 @@ import React from "react";
 const TechStack = () => {
   return (
     <div>
+    <a name="tech" />
       <div className="tech">
       <h1 className="tech-header">The more you know!</h1>
         <i className="devicon-javascript-plain colored dev-1" />

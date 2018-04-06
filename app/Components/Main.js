@@ -8,12 +8,12 @@ import TechStack from './TechStack';
 const Main = (props) => {
   return (
     <div className="overlay-content">
-    <Navbar />
-    <Intro />
-    <Projects />
-    <TechStack />
-    <Resume />
-  </div>
+      <Navbar />
+      <Intro />
+      <Projects />
+      <TechStack />
+      <Resume />
+    </div>
   );
 };
 

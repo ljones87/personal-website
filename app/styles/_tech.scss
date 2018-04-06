@@ -26,11 +26,14 @@ $dev: dev;
     grid-area: header;
 
   }
-  i {
-    font-size: 5.5em;
+
+
     @for $i from 1 through 12 {
+      i {
+
       .#{$dev}-#{$i} {
-        grid-area: #{$dev}-#{$i}
+        grid-area: #{$dev}-#{$i};
+        background-color: black;
       }
     }
   }

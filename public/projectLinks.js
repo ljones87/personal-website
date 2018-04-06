@@ -28,7 +28,7 @@ const projects = [
  {
    id: 'e',
    name: 'Rebric.io | Sole Front-end Developer | Software Engineer',
-   link: 'http://rebric.io',
+   link: '/rebric',
    img: 'public/images/rebric.png'
  }
 ];
