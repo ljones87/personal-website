@@ -17,7 +17,7 @@ $dev: dev;
   grid-template-rows: repeat(5, 20%);
   column-gap: 1%;
   grid-template-areas:
-  ". . header header . . "
+  ". header header header header . "
   " . dev-1 dev-2 dev-3 dev-4 . "
   " . dev-5 dev-6 dev-7 dev-8 . "
   " . dev-9 dev-10 dev-11 dev-12 . ";
@@ -26,7 +26,10 @@ $dev: dev;
     grid-area: header;
     font-family: Brandon, sans-serif;
     font-size: calc(24px + .125vw);
-    font-weight: 400;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+
   }
 
 
