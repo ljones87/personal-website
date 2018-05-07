@@ -3,35 +3,68 @@ section {
   color: #707070;
   position: relative;
   z-index: 1;
-  width: 100%;
-  &.project-section {
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    min-height: 100vh;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
+  width: 90%;
 
+  &.project-section {
+    min-height: 100vh;
+    .large-6 {
+      padding-right: 40px!important;
+      padding-bottom: 40px!important;
+     // @media print, screen and (min-width: 64em) {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+      //}
+    }
+    .small-12 {
+      @media print, screen and (max-width: 64em) {
+        padding-right: 40px!important;
+        padding-bottom: 40px!important;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
 
   .projects {
     margin-left: auto;
     margin-right: auto;
     max-width: 1440px;
     .projects-container {
-      font: inherit;
-      vertical-align: baseline;
-      display: block;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+
     }
-    .project-box-a {
+    .project-image {
       padding-bottom: 56.28571429%;
-      background: 50% no-repeat;
+      background: 10% no-repeat;
       background-size: cover;
       display: block;
       position: relative;
-      height: 100%;
-      width: 100%;
+      //background-repeat: no-repeat;
+      &.a {
+        background-image: url('/public/images/EC/HomeScreen.png');
+      }
+      &.b {
+        background-image: url('/public/images/dataVis.png');
+      }
+      &.c {
+        background-image: url('/public/images/techTalk.png');
+      }
+      &.d {
+        background-image: url('/public/images/erasers.png');
+      }
+      &.e {
+        background-image: url('/public/images/rebric.png');
+      }
+
+
     }
     header {
       display: flex;
@@ -63,6 +96,11 @@ section {
         font-size: 100%;
         font: inherit;
         vertical-align: baseline;
+
+
+          text-decoration: none;
+          border-right: 1px solid $purple-1;
+
       }
     }
     }

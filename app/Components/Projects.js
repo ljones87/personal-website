@@ -9,19 +9,26 @@ const Projects = () => {
         <a name="projects" />
         <div className="projects-container">
           {projects.map(project => (
-            <header>
-            <div>
-              <h3
-                className="project-title"
-                key={project.link}>
-                <a
-                  href={project.link}
-                  className={`project-box-${project.id}`}>
-                  {project.name}
-                </a>
-              </h3>
+            <div className="small-12 large-6">
+              <a
+                className={`project-image ${project.id}`}
+                href={project.link}>
+
+              </a>
+              <header>
+                <div>
+                  <h3
+                    className="project-title"
+                    key={project.link}>
+                    <a
+                      href={project.link}
+                      className={`project-box-${project.id}`}>
+                      {project.name}
+                    </a>
+                  </h3>
+                </div>
+              </header>
             </div>
-            </header>
           ))}
         </div>
       </div>
