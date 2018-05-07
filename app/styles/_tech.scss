@@ -7,8 +7,6 @@ $dev: dev;
   }
 }
 
-
-
 .tech {
   height: 950px;
   width: 100%;
@@ -25,13 +23,12 @@ $dev: dev;
   .tech-header {
     grid-area: header;
     font-family: Brandon, sans-serif;
-    font-size: calc(24px + .125vw);
+    font-size: calc(30px + .125vw);
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: .2em;
-
+    color: $purple-1;
   }
-
 
     @for $i from 1 through 12 {
       i {

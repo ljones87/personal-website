@@ -1,13 +1,12 @@
 /*-----------------Intro-----------------*/
 
 .intro {
-  height: 775px;
+  height: 700px;
   text-align: center;
   .img-beach {
-
     height: 100%;
     width:  100%;
-    background-image: linear-gradient(to bottom right, #361c32, rgba(54, 28, 50, 0.55) );
+    background-image: linear-gradient(to bottom right, rgb(54, 28, 50), rgba(54, 28, 50, 0.55) );
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
@@ -18,32 +17,35 @@
   .intro-container {
     display: grid;
     grid-template-columns: 16.66% auto 16.66%;
-    grid-template-rows: 250px 175px 200px  auto;
+    grid-template-rows: 170px 175px 200px  auto;
     z-index: 1;
     font-size: 40px;
     position: relative;
     h1 {
       grid-column: 2/ span 1;
       grid-row: 1 /span 1;
-      font-family: $Shadows;
+      font-family: $SansSerif;
       color: $orange-3;
       letter-spacing: 2rem;
-
+      text-transform: uppercase;
+      font-weight: 300;
     }
     h3 {
       grid-column: 2 / span 1;
       grid-row: 2 / span 1;
-      font-family: $Shadows;
+      font-family: $SansSerif;
       color: $orange-4;
       letter-spacing: 1.5rem;
+      font-weight: 300;
     }
     h4 {
       grid-column: 2 / span 1;
       grid-row: 3 / span 1;
       color: $yellow-4;
-      font-weight: 200;
       line-height: 1.5;
-      font-family: $Shadows;
+      font-family: $JosefinSlab;
+      font-weight: 300;
+      letter-spacing: 5px;
     }
   }
 

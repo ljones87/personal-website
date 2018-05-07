@@ -5,8 +5,10 @@ import projects from "../../public/projectLinks.js";
 const Projects = () => {
   return (
     <section className="project-section">
+    <a name="projects" />
+      <h2 className="section-title">Work</h2>
       <div className="projects">
-        <a name="projects" />
+
         <div className="projects-container">
           {projects.map(project => (
             <div className="small-12 large-6">

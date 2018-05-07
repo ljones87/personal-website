@@ -1,76 +1,117 @@
+section {
+  background: #f4f3f3;
+  color: #707070;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  .section-title {
+    font-size: calc(22.8px + .375vw);
+    font-family: Brandon,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: .2em;
+    line-height: 1.25;
+    text-transform: uppercase;
+    padding: 50px 50px 50px 65px;
+    color: $purple-1;
+  }
+  &.project-section {
+    min-height: 100vh;
 
-.projects {
-  height: 950px;
-  width: 100%;
-  padding-top: 100px;
-  margin-top: 5px;
-  background-size: 100%;
-  background-image: linear-gradient(to bottom right, rgba( 22, 54,127,.8), rgba(168,162,126,.7));
-  background-repeat: no-repeat;
-
-  .projects-container {
-    z-index: 2;
-    display: grid;
-    grid-template-columns: 10% 26% 26% 26% 10%;
-    grid-template-rows: 50px 300px 50px 50px 300px 50px;
-    grid-column-gap: 1%;
-    text-align: center;
-    .project-box-a {
-      z-index: 1;
-      grid-area: 1 / 2 / span 2 / 2;
-      background-size: 100%;
-      background-position-y: 80px;
-      height: 100%;
-      width: 100%;
-      background-image: url('/public/images/EC/HomeScreen.png');
-      background-repeat: no-repeat;
-
+    .projects-container {
+      width: 90%;
+      .large-6 {
+        padding-right: 40px!important;
+        padding-bottom: 40px!important;
+      // @media print, screen and (min-width: 64em) {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+          max-width: 50%;
+        //}
       }
+      .small-12 {
+        @media print, screen and (max-width: 64em) {
+          padding: 0 40px 40px 0;
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
 
-      .project-box-b {
-        grid-column: 3 / span 1;
-        grid-row: 1/ span 2;
-        height: 100%;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position-y: 80px;
+  .projects {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    .projects-container {
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+
+    }
+    .project-image {
+      padding-bottom: 56.28571429%;
+      background: 10% no-repeat;
+      background-size: cover;
+      display: block;
+      position: relative;
+      //background-repeat: no-repeat;
+      &.a {
+        background-image: url('/public/images/EC/HomeScreen.png');
+      }
+      &.b {
         background-image: url('/public/images/dataVis.png');
-        background-size: 100%;
       }
-      .project-box-c {
-        grid-column: 4 / span 1;
-        grid-row: 1/ span 2;
-        height: 100%;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position-y: 80px;
-        background-position-x: -10px;
-        background-size: 110%;
+      &.c {
         background-image: url('/public/images/techTalk.png');
       }
-      .project-box-d {
-        grid-column: 2 / span 1;
-        grid-row: 4/ span 2;
-        height: 100%;
-        width: 100%;
-        background-size: 130%;
-        background-position-y: 80px;
-        background-position-x: -30px;
-        background-repeat: no-repeat;
+      &.d {
         background-image: url('/public/images/erasers.png');
       }
-      .project-box-e {
-        grid-column: 3 / span 1;
-        grid-row: 4/ span 2;
-        height: 100%;
-        width: 100%;
-        background-size: 110%;
-        background-position-y: 80px;
-        background-position-x: -10px;
-        background-repeat: no-repeat;
+      &.e {
         background-image: url('/public/images/rebric.png');
       }
     }
+    header {
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      margin-right: 0;
+      margin-left: 0;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: calc(14.2px + 1.1875vw) !important;
+      padding-bottom: 7%;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      h3.project-title {
+        font-size: calc(17.6px + .125vw);
+        //font-weight: 400;
+        font-family: Brandon, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: .2em;
+        line-height: 1.25;
+        text-transform: uppercase;
+        padding-right: 50px;
+        border-right: 1px solid $purple-1;
+        a {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          font-size: 100%;
+          font: inherit;
+          vertical-align: baseline;
+          text-decoration: none;
+        }
+      }
+    }
   }
-
-
+}
+}
