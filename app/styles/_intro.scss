@@ -1,13 +1,13 @@
 /*-----------------Intro-----------------*/
 
 .intro {
-  height: 600px;
+  height: 775px;
   text-align: center;
   .img-beach {
 
     height: 100%;
     width:  100%;
-    background-image: linear-gradient(to bottom right, rgba( 22, 54,127,.8), rgba(168,162,126,.7) ) ,url("/public/images/beach.jpg");
+    background-image: linear-gradient(to bottom right, #361c32, rgba(54, 28, 50, 0.55) );
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;

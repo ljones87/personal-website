@@ -4,9 +4,10 @@ section {
   position: relative;
   z-index: 1;
   width: 90%;
-
+  height: fit-content;
   &.project-section {
     min-height: 100vh;
+
     .large-6 {
       padding-right: 40px!important;
       padding-bottom: 40px!important;
@@ -19,8 +20,7 @@ section {
     }
     .small-12 {
       @media print, screen and (max-width: 64em) {
-        padding-right: 40px!important;
-        padding-bottom: 40px!important;
+        padding: 0 40px 40px 0;
         -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -95,9 +95,8 @@ section {
         border: 0;
         font-size: 100%;
         font: inherit;
+        padding-right: 40px;
         vertical-align: baseline;
-
-
           text-decoration: none;
           border-right: 1px solid $purple-1;
 
