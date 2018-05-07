@@ -1,0 +1,50 @@
+/*-----------------Intro-----------------*/
+
+.intro {
+  height: 600px;
+  text-align: center;
+  .img-beach {
+
+    height: 100%;
+    width:  100%;
+    background-image: linear-gradient(to bottom right, rgba( 22, 54,127,.8), rgba(168,162,126,.7) ) ,url("/public/images/beach.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+  }
+
+  .intro-container {
+    display: grid;
+    grid-template-columns: 16.66% auto 16.66%;
+    grid-template-rows: 250px 175px 200px  auto;
+    z-index: 1;
+    font-size: 40px;
+    position: relative;
+    h1 {
+      grid-column: 2/ span 1;
+      grid-row: 1 /span 1;
+      font-family: $Shadows;
+      color: $orange-3;
+      letter-spacing: 2rem;
+
+    }
+    h3 {
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 1;
+      font-family: $Shadows;
+      color: $orange-4;
+      letter-spacing: 1.5rem;
+    }
+    h4 {
+      grid-column: 2 / span 1;
+      grid-row: 3 / span 1;
+      color: $yellow-4;
+      font-weight: 200;
+      line-height: 1.5;
+      font-family: $Shadows;
+    }
+  }
+
+}

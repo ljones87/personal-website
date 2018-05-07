@@ -4,19 +4,28 @@ import projects from "../../public/projectLinks.js";
 
 const Projects = () => {
   return (
-    <div className="projects">
-      <a name="projects" />
-      <div className="projects-container">
-        {projects.map(project => (
-          <a
-            href={project.link}
-            className={`project-box-${project.id}`}
-            key={project.link}>
-              <h3 className="proj-name hidden">{project.name}</h3>
-          </a>
-        ))}
+    <section className="project-section">
+      <div className="projects">
+        <a name="projects" />
+        <div className="projects-container">
+          {projects.map(project => (
+            <header>
+            <div>
+              <h3
+                className="project-title"
+                key={project.link}>
+                <a
+                  href={project.link}
+                  className={`project-box-${project.id}`}>
+                  {project.name}
+                </a>
+              </h3>
+            </div>
+            </header>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
