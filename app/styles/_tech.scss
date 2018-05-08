@@ -14,6 +14,7 @@ $dev: dev;
   grid-template-columns: repeat(6, 16%);
   grid-template-rows: repeat(5, 20%);
   column-gap: 0%;
+
   grid-template-areas:
   "rainbow rainbow header header header . "
   " . dev-1 dev-2 dev-3 dev-4 . "
@@ -22,13 +23,13 @@ $dev: dev;
 
   .tech-header {
     grid-area: header;
-    font-family: Brandon, sans-serif;
-    font-size: calc(30px + .125vw);
+    font-family: $SansSerif;
+    color: $purple-1;
+    font-size: calc(28px + .575vw);
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: .2em;
-    color: $purple-1;
-    float: left;
+    margin-left: 15px;
   }
 
   .rainbow {
@@ -65,12 +66,12 @@ $dev: dev;
       margin-left: 10px;
     }
     .star {
-      background-image: url('/public/images/star.png');
+      background-image: url('/public/images/star2.png');
       height: 80px;
       width: 80px;
       position: absolute;
-      top: -15px;
-      margin-left: 25px;
+      top: -10px;
+      margin-left: -5px;
       margin-right: 0%;
       background-size: cover;
     }
