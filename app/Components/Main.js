@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import Intro from './Intro';
 import Projects from './Projects';
-import Resume from './Resume';
+import Contact from './Contact';
 import TechStack from './TechStack';
 
 const Main = (props) => {
@@ -12,7 +12,7 @@ const Main = (props) => {
       <Intro />
       <Projects />
       <TechStack />
-      <Resume />
+      <Contact />
     </div>
   );
 };

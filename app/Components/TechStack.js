@@ -5,7 +5,14 @@ const TechStack = () => {
     <div>
     <a name="tech" />
       <div className="tech">
-      <h1 className="tech-header">The more you know!</h1>
+      <span className="orange" />
+      <span className="yellow" />
+      <span className="green" />
+      <span className="blue" />
+      <h1 className="tech-header">
+
+      The more you know!
+      </h1>
         <i className="devicon-javascript-plain colored dev-1" />
         <i className="devicon-react-original colored dev-2" />
         <i className="devicon-nodejs-plain-wordmark colored dev-3" />

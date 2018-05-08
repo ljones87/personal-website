@@ -1,0 +1,21 @@
+@keyframes bobble1 {
+  0%, 100% {
+    transform: translate3d(50px, 30px, 0);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(50px, 33px, 0);
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes bobble2 {
+  0%, 100% {
+    transform: translate3d(50px, 33px, 0);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(50px, 30px, 0);
+    animation-timing-function: ease-out;
+  }
+}
