@@ -15,7 +15,7 @@ $dev: dev;
   grid-template-rows: repeat(5, 20%);
   column-gap: 0%;
   grid-template-areas:
-  ". header header header header . "
+  "rainbow rainbow header header header . "
   " . dev-1 dev-2 dev-3 dev-4 . "
   " . dev-5 dev-6 dev-7 dev-8 . "
   " . dev-9 dev-10 dev-11 dev-12 . ";
@@ -28,24 +28,52 @@ $dev: dev;
     text-transform: uppercase;
     letter-spacing: .2em;
     color: $purple-1;
+    float: left;
   }
 
-  .orange {
-    width: 50px;
-    height: 2px;
-    color: orange;
-  }
+  .rainbow {
+    grid-area: rainbow;
+    width: 100%;
+    line-height: 1;
+    position: relative;
+    padding-left: 15px;
+    .pink {
+      border-bottom: 3px solid rgb(233, 121, 250);
+      display: inline-block;
+      width: 85%;
+      margin-left: 10px
+    }
 
-  .yellow {
-    color: yellow;
-  }
+    .purple {
+      border-bottom: 3px solid blue;
+      display: inline-block;
+      width: 85%;
+      margin-left: 10px;
+    }
 
-  .green {
+    .red {
+      border-bottom: 3px solid red;
+      display: inline-block;
+      width: 85%;
+      margin-left: 10px;
+    }
 
-  }
-
-  .blue {
-
+    .green {
+      border-bottom: 3px solid green;
+      display: inline-block;
+      width: 85%;
+      margin-left: 10px;
+    }
+    .star {
+      background-image: url('/public/images/star.png');
+      height: 80px;
+      width: 80px;
+      position: absolute;
+      top: -15px;
+      margin-left: 25px;
+      margin-right: 0%;
+      background-size: cover;
+    }
   }
 
     @for $i from 1 through 12 {

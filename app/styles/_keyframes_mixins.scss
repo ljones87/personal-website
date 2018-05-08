@@ -19,3 +19,22 @@
     animation-timing-function: ease-out;
   }
 }
+
+@mixin breakpoint($point) {
+
+  @if $point == large-view {
+    @media (min-width: 1199px) { @content; }
+  }
+  @else if $point == custom-view {
+    @media (min-width: 845px) { @content; }
+  }
+  @else if $point == medium-view {
+    @media (min-width: 769px) { @content; }
+  }
+  @else if $point == small-view {
+    @media (min-width: 580px) { @content; }
+  }
+  @else {
+    @media (max-width: $point) { @content; }
+  }
+}

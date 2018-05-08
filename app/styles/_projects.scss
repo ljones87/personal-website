@@ -4,13 +4,13 @@ section {
   position: relative;
   z-index: 1;
   text-align: center;
-  .section-title {
-    font-size: calc(22.8px + .375vw);
+
+  h1.section-title {
+    font-size: calc(35px + .375vw);
     font-family: Brandon,sans-serif;
     font-weight: 300;
     font-style: normal;
     letter-spacing: .2em;
-    line-height: 1.25;
     text-transform: uppercase;
     padding: 50px 50px 50px 65px;
     color: $purple-1;

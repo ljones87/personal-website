@@ -3,6 +3,7 @@
 .intro {
   height: 700px;
   text-align: center;
+
   .img-beach {
     height: 100%;
     width:  100%;
@@ -17,7 +18,7 @@
   .intro-container {
     display: grid;
     grid-template-columns: 16.66% auto 16.66%;
-    grid-template-rows: 170px 175px 200px  auto;
+    grid-template-rows: 170px 175px 175px 175px auto;
     z-index: 1;
     font-size: 40px;
     position: relative;
@@ -29,6 +30,7 @@
       letter-spacing: 2rem;
       text-transform: uppercase;
       font-weight: 300;
+      margin-top: 8%;
     }
     h3 {
       grid-column: 2 / span 1;
@@ -38,15 +40,17 @@
       letter-spacing: 1.5rem;
       font-weight: 300;
     }
-    h4 {
+    p {
       grid-column: 2 / span 1;
-      grid-row: 3 / span 1;
-      color: $yellow-4;
+      grid-row: 3 / span 2;
+      margin-top: 5px;
+      color: $orange-4;
+      letter-spacing: 2px;
       line-height: 1.5;
-      font-family: $JosefinSlab;
-      font-weight: 300;
-      letter-spacing: 5px;
+      font-size: calc(25px + .375vw);
+      // @include breakpoint(1200) {
+
+      // }
     }
   }
-
 }

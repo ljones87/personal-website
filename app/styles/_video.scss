@@ -1,10 +1,25 @@
 
-.rebric-before {
-  height: 50%;
-  width: 50%;
+.videos {
+  height: 100vh;
+  background-color: $Maroon;
+
+  .rebric-before {
+    height: 85%;
+    width: 52%;
+  }
+  .rebric-after {
+    height: 85%;
+    width: 48%;
+  }
+
+  h1 {
+    font-family: $SansSerif;
+    color: $orange-3;
+    letter-spacing: .2em;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    padding: 75px 42% 0 42%;
+  }
 }
 
-.rebric-after {
-  height: 50%;
-  width: 50%;
-}

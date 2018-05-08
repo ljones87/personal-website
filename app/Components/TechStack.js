@@ -3,16 +3,18 @@ import React from "react";
 const TechStack = () => {
   return (
     <div>
-    <a name="tech" />
+      <a name="tech" />
       <div className="tech">
-      <span className="orange" />
-      <span className="yellow" />
-      <span className="green" />
-      <span className="blue" />
-      <h1 className="tech-header">
-
-      The more you know!
-      </h1>
+        <div className="rainbow">
+          <span className="pink" />
+          <span className="purple" />
+          <span className="red" />
+          <span className="green" />
+          <span className="star" />
+        </div>
+        <h1 className="tech-header">
+          The more you know!
+        </h1>
         <i className="devicon-javascript-plain colored dev-1" />
         <i className="devicon-react-original colored dev-2" />
         <i className="devicon-nodejs-plain-wordmark colored dev-3" />
