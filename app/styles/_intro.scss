@@ -3,17 +3,13 @@
 .intro {
   height: 600px;
   text-align: center;
-
-  .img-beach {
-    height: 100%;
     width:  100%;
-    background-image: linear-gradient(to bottom right, rgb(54, 28, 50), rgba(54, 28, 50, 0.55) );
+    background-image: linear-gradient(to bottom, $Maroon, rgba(54, 28, 50, 0.55) );
     background-repeat: no-repeat;
     background-size: 100%;
-    position: absolute;
+
     z-index: 0;
-    top: 0;
-  }
+
 
   .intro-container {
     display: grid;

@@ -1,6 +1,5 @@
-import React from "react";
-//import Project from "./Project";
-import projects from "../../public/projectLinks.js";
+import React from 'react';
+import projects from '../../public/projectLinks.js';
 
 const Projects = () => {
   return (
@@ -15,7 +14,6 @@ const Projects = () => {
               <a
                 className={`project-image ${project.id}`}
                 href={project.link}>
-
               </a>
               <header>
                 <div>

@@ -15,6 +15,9 @@ const TechStack = () => {
         <h1 className="tech-header">
           The more you know!
         </h1>
+        <h3 className="sub-header">
+        Tech Stack
+        </h3>
         <i className="devicon-javascript-plain colored dev-1" />
         <i className="devicon-react-original colored dev-2" />
         <i className="devicon-nodejs-plain-wordmark colored dev-3" />

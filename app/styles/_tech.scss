@@ -17,6 +17,7 @@ $dev: dev;
 
   grid-template-areas:
   "rainbow rainbow header header header header "
+  " . sub-header sub-header sub-header sub-header ."
   " . dev-1 dev-2 dev-3 dev-4 . "
   " . dev-5 dev-6 dev-7 dev-8 . "
   " . dev-9 dev-10 dev-11 dev-12 . ";
@@ -30,6 +31,12 @@ $dev: dev;
     text-transform: uppercase;
     letter-spacing: .2em;
     margin-left: 70px;
+  }
+
+  .sub-header {
+    grid-area: header;
+    font-family: $SansSerif;
+    color: $purple-1;
   }
 
   .rainbow {

@@ -1,7 +1,7 @@
-import "./styles/index.scss";
-import React from "react";
-import ReactDOM from "react-dom";
-import Routing from "./Components/Routing";
+import './styles/index.scss';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Routing from './Components/Routing';
 
 const App = () => {
   return (
@@ -11,4 +11,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById('app'));
