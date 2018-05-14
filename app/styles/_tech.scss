@@ -12,7 +12,7 @@ $dev: dev;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 16%);
-  grid-template-rows: repeat(5, 20%);
+  grid-template-rows: 20% 50px repeat(4, 20%);
   column-gap: 0%;
 
   grid-template-areas:
@@ -25,7 +25,7 @@ $dev: dev;
   .tech-header {
     grid-area: header;
     font-family: $SansSerif;
-    color: $purple-1;
+    color: $orange-1;
     font-size: calc(28px + .575vw);
     font-weight: 300;
     text-transform: uppercase;
@@ -34,9 +34,18 @@ $dev: dev;
   }
 
   .sub-header {
-    grid-area: header;
+    grid-area: sub-header;
     font-family: $SansSerif;
-    color: $purple-1;
+    text-transform: uppercase;
+    color: $Maroon;
+    font-size: 2rem;
+    font-weight:300;
+    .underline {
+      height: 2px;
+      width: 100%;
+      background: linear-gradient(to right, $purple-1, $orange-1)
+    }
+
   }
 
   .rainbow {

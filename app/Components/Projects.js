@@ -10,11 +10,10 @@ const Projects = () => {
 
         <div className="projects-container">
           {projects.map(project => (
-            <div className="small-12 large-6">
+            <div className="small-12 large-6" key={project.id}>
               <a
                 className={`project-image ${project.id}`}
-                href={project.link}>
-              </a>
+                href={project.link} />
               <header>
                 <div>
                   <h3
