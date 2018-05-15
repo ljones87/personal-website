@@ -27635,7 +27635,7 @@ var TechStack = function TechStack() {
       _react2.default.createElement(
         "h3",
         { className: "sub-header" },
-        "Skills an Tech Stack",
+        "Where my skillz at...",
         _react2.default.createElement("div", { className: "underline" })
       ),
       _react2.default.createElement("i", { className: "devicon-javascript-plain colored dev-1" }),

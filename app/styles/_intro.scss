@@ -3,16 +3,16 @@
 .intro {
   height: 600px;
   text-align: center;
-    width:  100%;
-    background-image: linear-gradient(to bottom, $Maroon, rgba(54, 28, 50, 0.55) );
-    background-repeat: no-repeat;
-    background-size: 100%;
-    z-index: 0;
+  width:  100%;
+  background-image: linear-gradient(to bottom, $Maroon, rgba(54, 28, 50, 0.55) );
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 0;
 
   .intro-container {
     display: grid;
     grid-template-columns: 16.66% auto 16.66%;
-    grid-template-rows: 170px 175px 175px 175px auto;
+    grid-template-rows: 125px 175px 175px 200px auto;
     z-index: 1;
     font-size: 40px;
     position: relative;
@@ -24,7 +24,6 @@
       letter-spacing: 2rem;
       text-transform: uppercase;
       font-weight: 300;
-      margin-top: 8%;
     }
     h3 {
       grid-column: 2 / span 1;
