@@ -8,6 +8,7 @@ $dev: dev;
 }
 
 .tech {
+  width: 90%;
   max-width: 1440px;
   margin: 0 auto 0 auto;
   display: grid;
@@ -98,8 +99,13 @@ $dev: dev;
 
   .tech-icos {
     grid-area: flexbox;
+
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+
     justify-content: flex-start;
     align-items: center;
     align-content: center;
