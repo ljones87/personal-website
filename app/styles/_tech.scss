@@ -8,19 +8,20 @@ $dev: dev;
 }
 
 .tech {
-  height: 950px;
-  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
   display: grid;
-  grid-template-columns: repeat(6, 16%);
-  grid-template-rows: 20% 50px repeat(4, 20%);
+  grid-template-columns: 7.5% repeat(4, 21.25%) 7.5%;
+  grid-template-rows: 20% 50px repeat(4, 20%) 50px;
   column-gap: 0%;
 
   grid-template-areas:
   "rainbow rainbow header header header header "
   " . sub-header sub-header sub-header sub-header ."
-  " . dev-1 dev-2 dev-3 dev-4 . "
-  " . dev-5 dev-6 dev-7 dev-8 . "
-  " . dev-9 dev-10 dev-11 dev-12 . ";
+  " . flexbox flexbox flexbox flexbox  . "
+  " . flexbox flexbox flexbox flexbox  . "
+  " . flexbox flexbox flexbox flexbox  . "
+  " footer footer footer footer footer footer ";
 
   .tech-header {
     grid-area: header;
@@ -33,24 +34,10 @@ $dev: dev;
     margin-left: 70px;
   }
 
-  .sub-header {
-    grid-area: sub-header;
-    font-family: $SansSerif;
-    text-transform: uppercase;
-    color: $Maroon;
-    font-size: 2rem;
-    font-weight:300;
-    .underline {
-      height: 2px;
-      width: 100%;
-      background: linear-gradient(to right, $purple-1, $orange-1)
-    }
-
-  }
-
   .rainbow {
     grid-area: rainbow;
     width: 100%;
+    margin-top: 3%;
     line-height: 1;
     position: relative;
     padding-left: 15px;
@@ -93,21 +80,46 @@ $dev: dev;
     }
   }
 
-    @for $i from 1 through 12 {
+  .sub-header {
+    grid-area: sub-header;
+    font-family: $SansSerif;
+    text-transform: uppercase;
+    color: $Maroon;
+    font-size: 2rem;
+    font-weight:300;
+    margin-top: 3%;
+    .underline {
+      height: 2px;
+      width: 100%;
+      background: linear-gradient(to right, $purple-1, $orange-1)
+    }
+
+  }
+
+  .tech-icos {
+    grid-area: flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
       i {
-        font-size: 7rem;
-
-      .#{$dev}-#{$i} {
-        grid-area: #{$dev}-#{$i};
-        background-color: black;
-
+        font-size: 5rem;
+        margin: 2rem;
+        padding: 2rem;
+        align-self: center;
         &:hover {
           box-shadow: 0 0 6px rgba(0, 0, 0, 0.116);
           transform: translateY(3px);
         }
-      }
+        @include breakpoint(475px) {
+          font-size: 3rem;
+          margin: 1rem;
+          padding: 1rem;
+        }
     }
-  }
+
 
   @each $odd-number in (1, 3, 5, 8, 10, 12) {
     .#{$dev}-#{$odd-number} {
@@ -120,5 +132,5 @@ $dev: dev;
       animation: bobble2 2s infinite;
     }
   }
-
+  }
 }
