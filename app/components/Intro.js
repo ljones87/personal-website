@@ -12,7 +12,8 @@ const Intro = () => {
         my name is Lina and I am a fullstack web developer currently working
         in front-end engineering.<br />
         I love whiskey, rockstar video games, and building in code.
-        My site is still actively under construction, so please bear with me as I make improvements.</p>
+        My site is still actively under construction, please consider this
+        a sort of "temporary fence" of a portfolio while I learn and build more.</p>
       </div>
     </div>
   );

@@ -74,7 +74,7 @@ $dev: dev;
   .tech-header {
     grid-area: header;
     font-family: $SansSerif;
-    color: $orange-1;
+    color: $blue2;
     font-size: calc(28px + .575vw);
     font-weight: 300;
     text-transform: uppercase;
@@ -96,8 +96,8 @@ $dev: dev;
     margin: 3% 0;
     .underline {
       height: 2px;
-      width: 100%;
-      background: linear-gradient(to right, $purple-1, $orange-1)
+      width: 50%;
+      background: linear-gradient(to left, $blue, $lime, $Maroon)
     }
     @include breakpoint(500px) {
       font-size: 1.1em;
