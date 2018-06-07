@@ -2,9 +2,8 @@ import React from 'react';
 
 const TechStack = () => {
   return (
-    <div>
+     <div className="tech">
       <a name="tech" />
-      <div className="tech">
         <div className="rainbow">
           <span className="pink" />
           <span className="purple" />
@@ -15,10 +14,7 @@ const TechStack = () => {
         <h1 className="tech-header">
           The more you know!
         </h1>
-        <h4 className="sub-header">
-        Where my skillz at...
-           <div className="underline" />
-        </h4>
+
         <div className="tech-icos">
           <i className="devicon-javascript-plain colored dev-1" />
           <i className="devicon-react-original colored dev-2" />
@@ -35,8 +31,12 @@ const TechStack = () => {
           {/*<i className="devicon-docker-plain colored" />*/}
         </div>
       </div>
-    </div>
   );
 };
 
 export default TechStack;
+
+      /*<h4 className="sub-header">
+        Where my skillz at...
+           <div className="underline" />
+        </h4>*/
