@@ -34,34 +34,34 @@ $dev: dev;
     position: relative;
     padding-left: 15px;
     .pink {
-      border-bottom: 3px solid rgb(233, 121, 250);
+      border-bottom: 5px solid rgba(255, 0, 0, 0.804);
       display: inline-block;
       width: 85%;
       margin-left: 10px
     }
 
     .purple {
-      border-bottom: 3px solid blue;
+      border-bottom: 5px solid rgb(255, 132, 0);
       display: inline-block;
       width: 85%;
       margin-left: 10px;
     }
 
     .red {
-      border-bottom: 3px solid red;
+      border-bottom: 5px solid rgb(255, 247, 0);
       display: inline-block;
       width: 85%;
       margin-left: 10px;
     }
 
     .green {
-      border-bottom: 3px solid green;
+      border-bottom: 5px solid green;
       display: inline-block;
       width: 85%;
       margin-left: 10px;
     }
     .star {
-      background-image: url('/public/images/star2.png');
+      background-image: url('/public/images/star4.png');
       height: 80px;
       width: 80px;
       position: absolute;

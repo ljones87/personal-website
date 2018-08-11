@@ -2,32 +2,32 @@
 const projects = [
   {
    id: 'a',
-   name: 'Exquisite Corpse Mobile App | Co-developer | Software Engineer',
+   name: 'Exquisite Corpse Mobile App | Co developer',
    link: 'https://exquisitecorpse-fsa.herokuapp.com/',
    video: './images/EC/userFlow1.mp4',
    img: 'public/images/EC/HomeScreen.png'
  },
   {
     id: 'b',
-   name: 'Data Visualization | Sole Developer | Software Engineer',
+   name: 'Data Visualization | Sole Developer',
    link: 'https://us-state-emissions-history.herokuapp.com/',
    img: 'public/images/dataVis.png',
  },
  {
   id: 'c',
-   name: 'Tech Talk | Git Model & git reset',
+   name: 'Tech Talk | Git model & git reset',
    link: 'https://www.youtube.com/watch?v=Qy_WiWMiCks',
    img: 'public/images/techTalk.png'
  },
  {
   id: 'd',
-   name: 'ErasersErasersErasers! E-commerce | Co-developer | Software Engineer',
+   name: 'Erasers! E-commerce App | Co developer',
    link: 'https://salty-thicket-34013.herokuapp.com/home',
    img: 'public/images/erasers.png'
  },
  {
    id: 'e',
-   name: 'Rebric.io | Sole Front-end Developer | Software Engineer',
+   name: 'Rebric.io | \n Sole Front-end Engineer',
    link: '/rebric',
    img: 'public/images/rebric.png'
  }
