@@ -10,12 +10,11 @@ const RebricBandA = (props) => {
       >
       <h1>Rebric.io</h1>
       </a>
-      <h3>Before Conversion</h3>
+      <h3 className="before">Before Conversion</h3> <h3  className="after">After Conversion</h3>
       <video
         className="rebric-before"
         src={'/public/videos/RebricBefore.mov'}
         controls />
-        <h3>after Conversion</h3>
       <video
         className="rebric-after"
         src={'/public/videos/RebricAfter.mov'}

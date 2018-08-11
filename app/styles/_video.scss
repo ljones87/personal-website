@@ -4,10 +4,16 @@
   background-color: $Maroon;
 
   .rebric-before {
+    position: absolute;
+    top: 20%;
+    left: 0;
     height: 85%;
     width: 52%;
   }
   .rebric-after {
+    position: absolute;
+    top: 20%;
+    right: 0;
     height: 85%;
     width: 48%;
   }
@@ -19,13 +25,23 @@
     font-weight: 300;
     font-style: normal;
     text-transform: uppercase;
+    text-decoration: none;
     padding: 75px 42% 0 42%;
   }
   h3 {
+    position: absolute;
     font-family: $SansSerif;
     color: $orange-3;
     font-weight: 300;
-
+    display: inline;
+    &.before {
+      top:23%;
+      left: 20%
+    }
+    &.after {
+      top:23%;
+      right: 20%
+    }
   }
 }
 
