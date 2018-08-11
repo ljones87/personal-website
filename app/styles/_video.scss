@@ -2,20 +2,56 @@
 .videos {
   height: 100vh;
   background-color: $Maroon;
-
-  .rebric-before {
+  .before {
     position: absolute;
-    top: 20%;
+    top:23%;
     left: 0;
-    height: 85%;
-    width: 52%;
+    h3 {
+      margin-left: 20%;
+      font-family: $SansSerif;
+      color: $orange-3;
+      font-weight: 300;
+      display: inline;
+
+    }
+    video {
+      height: 50%;
+      width: 52%;
+      @include breakpoint(1025px) {
+        position: absolute;
+        top: 20%;
+        left: 0;
+      }
+      @include breakpoint(600px) {
+        font-size: 1.7em
+      }
   }
-  .rebric-after {
+
+  }
+
+  .after {
     position: absolute;
-    top: 20%;
+    top:23%;
     right: 0;
-    height: 85%;
-    width: 48%;
+    h3 {
+      margin-right: 20%;
+      font-family: $SansSerif;
+      color: $orange-3;
+      font-weight: 300;
+      display: inline;
+    }
+    video {
+      height: 50%;
+      width: 48%;
+      @include breakpoint(1025px) {
+        position: absolute;
+        top: 20%;
+        right: 0;
+      }
+      @include breakpoint(600px) {
+        font-size: 1.7em
+      }
+   }
   }
 
   h1 {

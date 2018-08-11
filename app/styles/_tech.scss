@@ -8,19 +8,16 @@ $dev: dev;
 }
 
 .tech {
-
   background-image: linear-gradient(to top, $Maroon, rgba(54, 28, 50, 0.776), rgb(244, 243, 243) );
   height: fit-content;
-
   padding: 0 10%;
   display: grid;
   grid-template-columns: 7.5% repeat(4, 21.25%) 7.5%;
   grid-template-rows: 20% 50px repeat(4, 20%) 50px;
   column-gap: 0%;
-
   grid-template-areas:
-  "rainbow rainbow header header header header "
-  " . sub-header sub-header sub-header sub-header ."
+  " . header header header header .  "
+  " . . rainbow rainbow rainbow ."
   " flexbox flexbox flexbox flexbox flexbox flexbox "
   " flexbox flexbox flexbox flexbox flexbox flexbox "
   " flexbox flexbox flexbox flexbox flexbox flexbox "
@@ -28,44 +25,36 @@ $dev: dev;
 
   .rainbow {
     grid-area: rainbow;
-    width: 100%;
-    margin-top: 3%;
+    width: 75%;
+    margin: 2% 0 3% 0;
     line-height: 1;
     position: relative;
-    padding-left: 15px;
-    .pink {
-      border-bottom: 5px solid rgba(255, 0, 0, 0.804);
-      display: inline-block;
-      width: 85%;
-      margin-left: 10px
-    }
-
-    .purple {
-      border-bottom: 5px solid rgb(255, 132, 0);
-      display: inline-block;
-      width: 85%;
-      margin-left: 10px;
-    }
-
     .red {
-      border-bottom: 5px solid rgb(255, 247, 0);
+      border-bottom: calc(1px + .275vw) solid rgba(255, 0, 0, 0.804);
       display: inline-block;
-      width: 85%;
-      margin-left: 10px;
+      width:75%;
     }
-
-    .green {
-      border-bottom: 5px solid green;
+    .orange {
+      border-bottom: calc(2px + .375vw)solid rgb(255, 132, 0);
       display: inline-block;
-      width: 85%;
-      margin-left: 10px;
+      width:75%;
+    }
+    .yellow {
+      border-bottom: calc(3px + .375vw) solid rgb(255, 247, 0);
+      display: inline-block;
+      width:75%;
+    }
+    .green {
+      border-bottom: calc(4px + .375vw) solid green;
+      display: inline-block;
+      width:75%;
     }
     .star {
       background-image: url('/public/images/star4.png');
-      height: 80px;
-      width: 80px;
+      height: calc(65px + .575vw);;
+      width: calc(65px + .575vw);;
       position: absolute;
-      top: -10px;
+      top: -5px;
       margin-left: -5px;
       margin-right: 0%;
       background-size: cover;
@@ -74,13 +63,13 @@ $dev: dev;
 
   .tech-header {
     grid-area: header;
+    text-align: center;
     font-family: $SansSerif;
     color: $blue2;
     font-size: calc(28px + .575vw);
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: .2em;
-    margin-left: 70px;
     @include breakpoint(500px) {
       font-size: 1.2em;
     }
