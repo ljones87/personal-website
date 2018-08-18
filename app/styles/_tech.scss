@@ -64,12 +64,12 @@ $dev: dev;
   .tech-header {
     grid-area: header;
     text-align: center;
-    font-family: $SansSerif;
-    color: $blue2;
+    font-family:  Arial, sans-serif;
+    text-shadow: 3px 2px 1px rgb(98, 57, 169);
+    color: #7154A3;
     font-size: calc(28px + .575vw);
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: .2em;
+    font-weight: 500;
+
     @include breakpoint(500px) {
       font-size: 1.2em;
     }

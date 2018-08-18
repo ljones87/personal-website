@@ -12,7 +12,7 @@ const TechStack = () => {
           <span className="star" />
         </div>
         <h1 className="tech-header">
-          Tech I use often
+          The More You Know
         </h1>
 
         <div className="tech-icos">
