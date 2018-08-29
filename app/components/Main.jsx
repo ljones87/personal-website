@@ -4,11 +4,13 @@ import Intro from './Intro';
 import Projects from './Projects';
 import Contact from './Contact';
 import TechStack from './TechStack';
+import Header from './Header';
 
 const Main = (props) => {
   return (
     <div className="overlay-content">
       <Navbar />
+      <Header />
       <Intro />
       <Projects />
       <TechStack />
