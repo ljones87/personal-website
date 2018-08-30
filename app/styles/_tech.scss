@@ -9,9 +9,8 @@ $dev: dev;
 
 .tech {
   background-image: linear-gradient(to top, rgb(28, 44, 54), rgba(28, 47, 54, 0.776), rgb(244, 243, 243) );
-  height: 60vh;
   min-height: fit-content;
-  padding: 0 10%;
+  padding: 0 30vh;
   display: grid;
   grid-template-columns: 7.5% repeat(4, 21.25%) 7.5%;
   grid-template-rows: 25% repeat(3, 25%);
@@ -19,14 +18,14 @@ $dev: dev;
   grid-template-areas:
   " . header header header header .  "
 
-  " flexbox flexbox flexbox flexbox flexbox flexbox "
-  " flexbox flexbox flexbox flexbox flexbox flexbox "
-  " flexbox flexbox flexbox flexbox flexbox flexbox ";
+  " . flexbox flexbox flexbox flexbox . "
+  " . flexbox flexbox flexbox flexbox . "
+  " . flexbox flexbox flexbox flexbox . ";
 
 
   .header--tech {
     grid-area: header;
-    height: 130%;
+    height: 12vw;
     background-size: contain;
   }
 
@@ -45,7 +44,7 @@ $dev: dev;
 
       i {
         font-size: 5rem;
-        margin: 0 2rem 2rem 0;
+        margin: 0 7rem 5rem 0;
         padding: 2rem;
         align-self: center;
         &:hover {

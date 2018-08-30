@@ -29,8 +29,3 @@ const TechStack = () => {
 };
 
 export default TechStack;
-
-      /*<h4 className="sub-header">
-        Where my skillz at...
-           <div className="underline" />
-        </h4>*/

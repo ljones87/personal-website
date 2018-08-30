@@ -5,14 +5,12 @@
   justify-content: space-between;
   position: relative;
   padding: 1.3% ;
-  //background-color: $Maroon;
   height: 120px;
   z-index: 5;
   span {
-    //margin: 10px 10px;
     font-size: 2.3em;
     text-align: center;
-
+    transition: all .2s ease-in-out;
     @include breakpoint(1200px) {
       font-size: 4vw;
     }
@@ -21,11 +19,16 @@
       font-size: 1.2em;
     }
     &:hover {
-      color: rgb(192, 240, 27);
+      transform: scale(1.2)
     }
-  }
+
+
   a {
     text-decoration: none;
     color: $orange-1;
+    &:hover {
+      color: #ebd333;
+    }
   }
+}
 }
