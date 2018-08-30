@@ -28,12 +28,12 @@ $dev: dev;
     align-content: center;
     justify-content: center;
   }
-
+  a { margin: 0;}
   .header--tech {
     grid-area: header;
-    height: 12vw;
+    height: 17vw;
     max-height: 225px;
-    min-height: 100px;
+    min-height: 110px;
     background-size: contain;
   }
 
