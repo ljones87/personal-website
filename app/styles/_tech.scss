@@ -8,90 +8,26 @@ $dev: dev;
 }
 
 .tech {
-  background-image: linear-gradient(to top, $Maroon, rgba(54, 28, 50, 0.776), rgb(244, 243, 243) );
-  height: fit-content;
+  background-image: linear-gradient(to top, rgb(28, 44, 54), rgba(28, 47, 54, 0.776), rgb(244, 243, 243) );
+  height: 60vh;
+  min-height: fit-content;
   padding: 0 10%;
   display: grid;
   grid-template-columns: 7.5% repeat(4, 21.25%) 7.5%;
-  grid-template-rows: 20% 50px repeat(4, 20%) 50px;
+  grid-template-rows: 25% repeat(3, 25%);
   column-gap: 0%;
   grid-template-areas:
   " . header header header header .  "
-  " . . rainbow rainbow rainbow ."
-  " flexbox flexbox flexbox flexbox flexbox flexbox "
-  " flexbox flexbox flexbox flexbox flexbox flexbox "
-  " flexbox flexbox flexbox flexbox flexbox flexbox "
-  " footer footer footer footer footer footer ";
 
-  .rainbow {
-    grid-area: rainbow;
-    width: 75%;
-    margin: 2% 0 3% 0;
-    line-height: 1;
-    position: relative;
-    .red {
-      border-bottom: calc(1px + .275vw) solid rgba(255, 0, 0, 0.804);
-      display: inline-block;
-      width:75%;
-    }
-    .orange {
-      border-bottom: calc(2px + .375vw)solid rgb(255, 132, 0);
-      display: inline-block;
-      width:75%;
-    }
-    .yellow {
-      border-bottom: calc(3px + .375vw) solid rgb(255, 247, 0);
-      display: inline-block;
-      width:75%;
-    }
-    .green {
-      border-bottom: calc(4px + .375vw) solid green;
-      display: inline-block;
-      width:75%;
-    }
-    .star {
-      background-image: url('/public/images/star4.png');
-      height: calc(65px + .575vw);;
-      width: calc(65px + .575vw);;
-      position: absolute;
-      top: -5px;
-      margin-left: -5px;
-      margin-right: 0%;
-      background-size: cover;
-    }
-  }
+  " flexbox flexbox flexbox flexbox flexbox flexbox "
+  " flexbox flexbox flexbox flexbox flexbox flexbox "
+  " flexbox flexbox flexbox flexbox flexbox flexbox ";
 
-  .tech-header {
+
+  .header--tech {
     grid-area: header;
-    text-align: center;
-    font-family:  Arial, sans-serif;
-    text-shadow: 3px 2px 1px rgb(98, 57, 169);
-    color: #7154A3;
-    font-size: calc(28px + .575vw);
-    font-weight: 500;
-
-    @include breakpoint(500px) {
-      font-size: 1.2em;
-    }
-  }
-
- .sub-header {
-    grid-area: sub-header;
-    font-family: $SansSerif;
-    text-transform: uppercase;
-    text-align: center;
-    color: $Maroon;
-    font-size: 2rem;
-    font-weight:300;
-    margin: 3% 0;
-    .underline {
-      height: 2px;
-      width: 50%;
-      background: linear-gradient(to left, $blue, $lime, $Maroon)
-    }
-    @include breakpoint(500px) {
-      font-size: 1.1em;
-    }
+    height: 130%;
+    background-size: contain;
   }
 
   .tech-icos {

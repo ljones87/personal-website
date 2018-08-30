@@ -1,23 +1,30 @@
 module.exports = {
   particles: {
     number: {
-      value: 80,
-      density: 'enable'
-    },
-    size: {
-      value: 2
+      value: 60,
+      density: {
+        enable: true,
+        value_area: 1500
+      }
     },
     line_linked: {
-      distance: 100,
-      width: 1
+      enable: true,
+      opacity: 0.02
     },
     move: {
-      enable: true
+      direction: 'right',
+      speed: 0.05
+    },
+    size: {
+      value: 1.5
+    },
+    opacity: {
+      anim: {
+        enable: true,
+        speed: 1,
+        opacity_min: 0.01
+      }
     }
   },
-  interactivity: {
-    events: {
-      resize: false
-    }
-  }
+  retina_detect: true
 };

@@ -18,7 +18,7 @@
     padding: 4% 7.5%;
     z-index: 1;
     position: relative;
-    font-family: $Assistant;
+    font-family: $SansSerif;
     h1 {
       color: $orange-3;
       font-size: calc(70px + .8vw);
@@ -48,6 +48,7 @@
     }
     p {
       margin-top: 3%;
+      width: 80%;
       color:$yellow-4;
       letter-spacing: 3px;
       line-height: 2;

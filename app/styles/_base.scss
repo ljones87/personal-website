@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: $JosefinSlab;
+  font-family: $SansSerif;
   font-weight: 300;
   height: 100%;
 }
@@ -17,13 +17,17 @@ a {
 }
 
 .body--background {
-  background-image: linear-gradient(to bottom, $Maroon, rgba(54, 28, 50, 0.776), rgb(244, 243, 243) );
+  background-image: linear-gradient(to bottom, rgb(28, 44, 54), rgba(28, 47, 54, 0.776), rgb(244, 243, 243) );
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 
-
+.header--section {
+  font-family: $SansSerif;
+  position: relative;
+  text-decoration: underline;
+}
 
 
 
