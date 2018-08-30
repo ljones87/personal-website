@@ -26,6 +26,7 @@
       margin-bottom: 1%;
       text-transform: uppercase;
       font-weight: 300;
+      animation: fade-in 2s 0 1 ease-in;
       @include breakpoint(1200px) {
         font-size: 10vw;
       }

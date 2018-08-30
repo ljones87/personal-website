@@ -10,7 +10,7 @@ $dev: dev;
 .tech {
   background-image: linear-gradient(to top, rgb(28, 44, 54), rgba(28, 47, 54, 0.776), rgb(244, 243, 243) );
   min-height: fit-content;
-  padding: 0 30vh;
+  padding: 0 5vw;
   display: grid;
   grid-template-columns: 7.5% repeat(4, 21.25%) 7.5%;
   grid-template-rows: 25% repeat(3, 25%);
@@ -21,11 +21,19 @@ $dev: dev;
   " . flexbox flexbox flexbox flexbox . "
   " . flexbox flexbox flexbox flexbox . "
   " . flexbox flexbox flexbox flexbox . ";
-
+  @include breakpoint(1500px) {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+  }
 
   .header--tech {
     grid-area: header;
     height: 12vw;
+    max-height: 225px;
+    min-height: 100px;
     background-size: contain;
   }
 
@@ -40,20 +48,25 @@ $dev: dev;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-left: -10%;
-
+    margin-left: -3%;
+    @include breakpoint(1500px) {
+      margin-left: -10%
+    }
+    @include breakpoint(700px) {
+      margin-left: -20%;
+    }
       i {
         font-size: 5rem;
-        margin: 0 7rem 5rem 0;
+        margin: 2rem 4rem 3rem 4rem;
         padding: 2rem;
         align-self: center;
         &:hover {
           box-shadow: 0 0 6px rgba(0, 0, 0, 0.116);
           transform: translateY(3px);
         }
-        @include breakpoint(475px) {
+        @include breakpoint(575px) {
           font-size: 3rem;
-          margin: 0 1rem 1rem 0;
+          margin: 1rem ;
           padding: 1rem;
         }
     }

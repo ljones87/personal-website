@@ -38,3 +38,24 @@
     @media (max-width: $point) { @content; }
   }
 }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: .2;
+  }
+  30% {
+    opacity: .4;
+  }
+  50% {
+    opacity: .6;
+  }
+  70% {
+    opacity:  .8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
