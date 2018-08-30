@@ -26,7 +26,12 @@
       margin-bottom: 1%;
       text-transform: uppercase;
       font-weight: 300;
-      animation: fade-in 2s 0 1 ease-in;
+      opacity: 0;
+      animation-name: fadeIn;
+      animation-duration: 4s;
+      animation-iteration-count: 1;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
       @include breakpoint(1200px) {
         font-size: 10vw;
       }
@@ -40,6 +45,13 @@
       line-height: 1.5;
       font-weight: 300;
       font-size: calc(35px + .275vw);
+      opacity: 0;
+      animation-name: fadeIn;
+      animation-delay: 2s;
+      animation-duration: 4s;
+      animation-iteration-count: 1;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
       @include breakpoint(1200px) {
         font-size: calc(15px + 3vw);
       }
@@ -54,6 +66,13 @@
       letter-spacing: 3px;
       line-height: 2;
       font-size: calc(20px + .575vw);
+      opacity: 0;
+      animation-name: fadeIn;
+      animation-delay: 4s;
+      animation-duration: 4s;
+      animation-iteration-count: 1;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
       @include breakpoint(1200px) {
         font-size: calc(10px + 2vw);
       }
