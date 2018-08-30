@@ -3,9 +3,7 @@
 .intro {
   text-align: center;
   width:  100%;
-  background-image: linear-gradient(to bottom, $Maroon, rgba(54, 28, 50, 0.776), rgb(244, 243, 243) );
-  background-repeat: no-repeat;
-  background-size: 100%;
+
   z-index: 0;
   height: 700px;
   @include breakpoint(600px) {

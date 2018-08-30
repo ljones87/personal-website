@@ -8,7 +8,7 @@ import Header from './Header';
 
 const Main = (props) => {
   return (
-    <div className="overlay-content">
+    <div className="body--background">
       <Navbar />
       <Header />
       <Intro />
