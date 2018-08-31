@@ -6,6 +6,7 @@
 
   z-index: 0;
   height: 100vh;
+  min-height: fit-content;
   @include breakpoint(600px) {
     height: 600px;
   }
@@ -14,14 +15,13 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-
-    padding: 4% 7.5%;
+    padding: 0 7.5%;
     z-index: 1;
     position: relative;
     font-family: $SansSerif;
     h1 {
       color: $orange-3;
-      font-size: calc(70px + .8vw);
+      font-size: calc(60px + 1vw);
       letter-spacing: 2rem;
       margin-bottom: 1%;
       text-transform: uppercase;
@@ -44,7 +44,7 @@
       letter-spacing: 1.5rem;
       line-height: 1.5;
       font-weight: 300;
-      font-size: calc(35px + .275vw);
+      font-size: 33px;
       opacity: 0;
       animation-name: fadeIn;
       animation-delay: 2s;
@@ -53,7 +53,7 @@
       animation-timing-function: linear;
       animation-fill-mode: forwards;
       @include breakpoint(1200px) {
-        font-size: calc(15px + 3vw);
+        font-size: calc(18px + 1vw);
       }
       @include breakpoint(600px) {
         font-size: 1.5em
@@ -65,7 +65,7 @@
       color:$yellow-4;
       letter-spacing: 3px;
       line-height: 2;
-      font-size: calc(20px + .575vw);
+      font-size: 20px;
       opacity: 0;
       animation-name: fadeIn;
       animation-delay: 4s;
@@ -74,7 +74,7 @@
       animation-timing-function: linear;
       animation-fill-mode: forwards;
       @include breakpoint(1200px) {
-        font-size: calc(10px + 2vw);
+        font-size: calc(10px + 1vw);
       }
       @include breakpoint(600px) {
         font-size: 1em;

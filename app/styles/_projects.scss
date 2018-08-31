@@ -20,12 +20,10 @@ section {
   &.project-section {
     min-height: 100vh;
 
-
-
   .projects {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1440px;
+    max-width: 1000px;
     .projects-container {
       display: flex;
       -webkit-box-orient: horizontal;
@@ -34,8 +32,8 @@ section {
       flex-flow: row wrap;
       width: 90%;
       .large-6 {
-        padding-right: 40px!important;
-        padding-bottom: 40px!important;
+        // padding-right: 40px!important;
+        // padding-bottom: 40px!important;
         -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
@@ -44,11 +42,11 @@ section {
       }
       .small-12 {
         @media print, screen and (max-width: 64em) {
-          padding: 0 40px 40px 0;
+
           -webkit-box-flex: 0;
-          -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-          max-width: 100%;
+          -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+          max-width: 80%;
         }
       }
     }
@@ -90,15 +88,14 @@ section {
       -ms-flex-pack: justify;
       justify-content: space-between;
       h3.project-title {
-        font-size: calc(17.6px + .125vw);
-        //font-weight: 400;
+        font-size: calc(20px);
         font-family: $SansSerif;
         font-weight: 300;
         font-style: normal;
         letter-spacing: .2em;
         line-height: 1.25;
         text-transform: uppercase;
-        padding-right: 50px;
+        padding-right: 0 20px;
         border-right: 1px solid $purple-1;
         a {
           margin: 0;

@@ -6,7 +6,7 @@ const Intro = () => {
       <a name="home" />
       <div className="intro-container">
 
-        <h1>Hello!</h1>
+        <h1>Hello</h1>
         <h3>Thank you for visiting,</h3>
         <p>
         I'm Lina, a fullstack web developer currently working
