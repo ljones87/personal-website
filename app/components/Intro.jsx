@@ -7,7 +7,7 @@ const Intro = () => {
       <div className="intro-container">
 
         <h1>Hello</h1>
-        <h3>Thank you for visiting,</h3>
+        <h3>Thank you for visiting</h3>
         <p>
         I'm Lina, a fullstack web developer currently working
         in front-end engineering.<br />
