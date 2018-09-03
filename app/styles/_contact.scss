@@ -1,14 +1,12 @@
 
 .contact {
-  height: 35vh;
-  //background-color: rgb(28, 44, 54);
+  height: 50vh;
   z-index: 5;
-  padding: 1.3%;
+  padding: 10%;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  flex-shrink: 1;
+
 
   h1 {
     font-family: $SansSerif;
@@ -17,26 +15,28 @@
     text-transform: uppercase;
     font-weight: 300;
     color: $orange-1;
+    font-size: calc(18px + 2vw);
+    @include breakpoint(450px) {
+      font-size: 20px;
+    }
   }
   a {
     z-index: 5;
-    height: 70px;
-    width: 70px;
-    background-size: cover;
+    height: 7vw;
+    width: 7vw;
+    background-size: contain;
+    background-repeat: no-repeat;
 
     &.nav {
-      margin: 0
+      margin: 0;
+      display: none;
     }
     &.linked-in {
       background-image: url('/public/images/linkedIn.png');
     }
 
     &.github {
-      height: 70px;
-      width: 70px;
-      background-size: cover;
       background-image: url('/public/images/github.png');
-      color: #CA9400;
     }
 }
 }
