@@ -37,6 +37,18 @@ $dev: dev;
     background-size: contain;
   }
 
+  .img--backer {
+    grid-area: header;
+    position: relative;
+    height: 17vw;
+    max-height: 225px;
+    min-height: 110px;
+    background-size: contain;
+    background-color: rgba(250, 235, 215, 0.543);
+    clip-path: polygon(100% 0, 95% 38%, 100% 67%, 2% 100%, 5% 71%, 2% 43%);
+    z-index: -1;
+  }
+
   .tech-icos {
     max-width: 1440px;
     grid-area: flexbox;

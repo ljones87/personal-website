@@ -4,11 +4,11 @@ const TechStack = () => {
   return (
     <div className="tech">
       <a name="tech" />
-
       <img
         className="header--tech"
         src="https://static1.squarespace.com/static/50eca855e4b0939ae8bb12d9/t/5625502ae4b07a661c42bea4/1404689237150/?format=750w"
       />
+
       <div className="tech-icos">
         <i className="devicon-javascript-plain colored dev-1" />
         <i className="devicon-react-original colored dev-2" />

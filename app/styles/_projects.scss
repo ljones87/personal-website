@@ -1,6 +1,5 @@
 section {
-  background: #f4f3f3;
-  color: #707070;
+  background: rgba(45, 51, 58, 0.561);
   position: relative;
   z-index: 1;
   text-align: center;
@@ -15,7 +14,7 @@ section {
     letter-spacing: .2em;
     text-transform: uppercase;
     padding: 50px 50px 50px 65px;
-    color: $Maroon;
+    color: $orange-1;
   }
   &.project-section {
     min-height: 100vh;
@@ -32,8 +31,6 @@ section {
       flex-flow: row wrap;
       width: 90%;
       .large-6 {
-        // padding-right: 40px!important;
-        // padding-bottom: 40px!important;
         -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
@@ -51,12 +48,11 @@ section {
       }
     }
     .project-image {
-      padding-bottom: 56.28571429%;
-      background: 10% no-repeat;
-      background-size: cover;
+      padding-bottom: 56.5%;
+      background: 50% no-repeat;
+      background-size: contain;
       display: block;
       position: relative;
-      //background-repeat: no-repeat;
       &.a {
         background-image: url('/public/images/EC/HomeScreen.png');
       }
@@ -75,17 +71,11 @@ section {
     }
     header {
       display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
       margin-right: 0;
       margin-left: 0;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
-      margin-top: calc(14.2px + 1.1875vw) !important;
+      margin-top: calc(14.2px + 1.1875vw) ;
       padding-bottom: 7%;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
       justify-content: space-between;
       h3.project-title {
         font-size: calc(20px);
@@ -96,7 +86,7 @@ section {
         line-height: 1.25;
         text-transform: uppercase;
         padding-right: 0 20px;
-        border-right: 1px solid $purple-1;
+        border-right: 1px solid $orange-1;
         a {
           margin: 0;
           padding: 0;
@@ -105,7 +95,7 @@ section {
           font: inherit;
           vertical-align: baseline;
           text-decoration: none;
-          color: $Maroon;
+          color: $orange-1;
         }
       }
     }
