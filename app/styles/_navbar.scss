@@ -20,6 +20,9 @@
       margin: 10px;
       font-size: 18px;
     }
+    @include breakpoint(450px) {
+      display: none;
+    }
     &:after {
       content: '';
       width: 0px;

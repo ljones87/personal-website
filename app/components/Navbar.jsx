@@ -4,9 +4,9 @@ const Navbar = () => {
   return (
     <span className="navbar">
 
-      <span className="P"><a href="http://www.jonesybuilds.tech/#projects">Work</a></span>
-      <span className="T"><a href="http://www.jonesybuilds.tech/#tech">Stack</a></span>
-      <span className="C"><a href="http://www.jonesybuilds.tech/#contact">Contact</a></span>
+      <span className="P"><a href="#projects">Work</a></span>
+      <span className="T"><a href="#tech">Stack</a></span>
+      <span className="C"><a href="#contact">Contact</a></span>
     </span>
   );
 };
