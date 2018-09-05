@@ -10,10 +10,16 @@ const Projects = () => {
 
         <div className="projects-container">
           {projects.map(project => (
-            <div className="small-12 large-6" key={project.id}>
+            <div
+              className="small-12 large-6"
+              key={project.id}
+            >
               <a
                 className={`project-image ${project.id}`}
-                href={project.link} />
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              />
               <header>
                 <div>
                   <h3
@@ -21,6 +27,8 @@ const Projects = () => {
                     key={project.link}>
                     <a
                       href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`project-box-${project.id}`}>
                       {project.name}
                     </a>
