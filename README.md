@@ -1,6 +1,6 @@
 Oh, hello!
 
-Welcome to my website. Please click around and check out my portfolio: jonesybuilds.tech
+Welcome to my website. Please click around and check out my portfolio: [jonesybuilds.tech](https://jonesybuilds.tech/)
 
 
 
